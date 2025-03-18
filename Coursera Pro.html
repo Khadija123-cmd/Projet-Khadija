@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    /* Réinitialisation des marges et padding pour une meilleure compatibilité */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styles de base */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Section */
+    .section {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin: 20px;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Titre de la section */
+    .section-title {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Contenu de la section */
+    .content {
+      padding-top: 40px; /* Ajout d'espace pour que le texte ne chevauche pas le titre */
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Responsive pour les tablettes et mobiles */
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      .content {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Tablette */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .section {
+        margin: 15px;
+        padding: 18px;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      .content {
+        font-size: 1rem;
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1025px) {
+      .section {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .content {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="section-title">Section 1</div>
+    <div class="content">
+      <p>Bonjour Bienvenus à cette site </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Section 2</div>
+    <div class="content">
+      <p>Le développement durable est un enjeu majeur pour notre planète. Il vise à répondre aux besoins du présent 
+        sans compromettre la capacité des générations futures à satisfaire les leurs. Cela nécessite un équilibre entre 
+        les aspects économiques, sociaux et environnementaux, afin de garantir une croissance qui respecte les ressources 
+        naturelles et améliore la qualité de vie des populations.</p>
+    </p>
+    </div>
+  </section>
+</body>
+</html>
